@@ -2,10 +2,10 @@ Here is a summarized version of the interview we had with the Vanier gardening c
 1.	General plant questions
 
 a.	What kind of plants do the Vanier Gardens have?
-The gardens are separated into three different gardens with different kinds of plants in them:
-•	The first (“the food forest”) contains perennial plants (i.e., trees, nuts, apples, blackberries, etc.);
-•	The second contains vegetables boxes (i.e., squash, corn, lettuce, etc.);
-•	The third (“the no-mow zone”) contains pollinating flowers, and grain.
+   The gardens are separated into three different gardens with different kinds of plants in them:
+      •	The first (“the food forest”) contains perennial plants (i.e., trees, nuts, apples, blackberries, etc.);
+      •	The second contains vegetables boxes (i.e., squash, corn, lettuce, etc.);
+      •	The third (“the no-mow zone”) contains pollinating flowers, and grain.
 
 b.	How often does each plant need to be watered?
 It depends on the weather conditions, as well as the plant.
