@@ -47,6 +47,4 @@ a.	Apart from the sensors we were already planning on adding (temperature, humid
 
       Ways to measure windspeed, the amount of rainfall and sunshine a plot of land receives would be useful. For the temperature and humidity sensor, obtaining the soil temperature and humidity would be more useful to have than the air temperature and humidity.
 We discussed more about our plans for our project, and he gave us some advice on where we could put the Raspberry Pi. He also said that for the purposes of the Vanier Gardens, having a Wi-Fi connection over the school’s Wi-Fi would be better than a data plan.
-
-We also received information on how to create a case for the Raspberry Pi, and where we could plant the Raspberry Pi, however that information is more relevant to if we were to ever create a future version of this product that could be used by the Vanier Gardens.
    
