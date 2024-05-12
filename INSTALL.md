@@ -1,7 +1,7 @@
 # Steps 
 ## Prepare the Raspberry Pi
 Open the terminal. Update and upgrade the Raspberry Pi's packages by typing the following commands.
-    sudo apt update
+'''sudo apt update
     sudo apt upgrade -y
 
 Install the required packages for this project (Python 3, its package manager pip, and the Python virtual environment module) with the following command:
