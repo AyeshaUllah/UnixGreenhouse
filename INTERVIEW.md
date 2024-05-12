@@ -1,4 +1,4 @@
-# INTERVIEW TRANSCRIPT
+# Interview Transcript
 Here is a summarized version of the interview we had with the Vanier gardening coordinator. The questions can be separated into three distinct categories: general plant questions, UI questions, and possible future enhancements/desired features. (Note: Originally, we were envisioning creating this system for indoor plants/personal, at-home gardens. However, the answers we received from Mark were more centered around caring for outdoor plants. Thus, some information may or may not be pertinent depending on how we proceed with the project.)
 ### 1.	General plant questions
 
