@@ -6,8 +6,11 @@
 - Capacitative Soil Moisture Sensor v. 1.2 (for soil moisture level).
 
 ## Wiring
-To connect the DTH11 sesnor to the Raspberry Pi, follow this diagram:
+To connect the DTH11 sensor to the Raspberry Pi, follow this diagram:
+
 ![image](https://github.com/AyeshaUllah/UnixGreenhouse/assets/123969109/514b1aa4-6d48-4fc2-811e-362775913bf6)
+
+Source: Pi My Life Up | https://pimylifeup.com/raspberry-pi-dht11-sensor/
 
 ## Preparing the Raspberry Pi
 Open the terminal. Update and upgrade the Raspberry Pi's packages by typing the following commands.
