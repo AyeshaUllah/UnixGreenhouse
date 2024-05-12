@@ -1,5 +1,11 @@
 # Steps to Create Project
-## Prepare the Raspberry Pi
+
+## Materials Overview:
+- Raspberry Pi 4,
+- DHT11 sensor (for temperature and humidity),
+- Capacitative Soil Moisture Sensor v. 1.2 (for soil moisture level).
+
+## Preparing the Raspberry Pi
 Open the terminal. Update and upgrade the Raspberry Pi's packages by typing the following commands.
 ```
 sudo apt update
