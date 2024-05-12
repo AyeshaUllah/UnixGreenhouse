@@ -9,8 +9,8 @@ Install the required packages for this project (Python 3, its package manager pi
 
 ## Creating the Python Virtual Environment
 Since we will be writing a Python script and using a Python virtual environment to run the DHT11 sensor, its best to create a separate directory to store all the required files.
-      mkdir ~/dht11
-      cd ~/dht11
+    mkdir ~/dht11
+    cd ~/dht11
 
 Create a Python virtual environment.
     python3 -m venv env
@@ -21,7 +21,7 @@ Run the environment.
 Install the Adafruit DHT Library.
     python3 -m pip install adafruit-circuitpython-dht
 
-# Creating the Python Script
+## Creating the Python Script
 Create a .py file in which you will write the code which will be used to run the DHT11 sensor.
     nano dht11.py
 
