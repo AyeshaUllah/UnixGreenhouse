@@ -2,7 +2,7 @@
 
 Winter 2024 | Unix 420-321-VA 
 
-### Project Overview:    
+## Project Overview  
 
 In an era of technological domination and rapid urbanization, it’s important for us to always remember to make space for nature in our lives. A great way to do this is by keeping a garden, as, with the widespread use of pesticides in agriculture, many have already turned to keeping their own gardens in order to safely grow their own produce. Unfortunately, a large number of people forget, or don’t have time, to tend to their plants regularly, which results in said plants withering away, wasting the would-be gardener’s time and effort. Thus, our team would like to create a solution to help people monitor their plant(s)'s condition(s), so that people can easily know when their plants need attention, and so that more people can keep a touch of nature in their lives.
 
@@ -12,11 +12,11 @@ One of our solutions that we had originally envisioned involved creating a plant
 
 (...)
 
-Our final solution was influenced, in part, by a meeting we had with the Vanier gardening coordinator. In order to ensure we were creating a useful product, we arranged a meeting with him to ask questions that were relevant to our project. To see a transcript of our interview, please view the INTERVIEW file.
+Our final solution was influenced, in part, by a meeting we had with the Vanier gardening coordinator. In order to ensure we were creating a useful product, we arranged a meeting with him to ask questions that were relevant to our project. To see a transcript of our interview, please view the [INTERVIEW](INTERVIEW.md) file.
 
-### Materials Overview:
+## Materials Overview
 1. Raspberry Pi 4,
 2. DHT11 sensor (for temperature and humidity),
 3. Capacitative Soil Moisture Sensor v. 1.2 (for soil moisture level).
 
-(see INSTALL file for information on how to create the system.)
+(see [INSTALL](INSTALL.md) file for information on how to create the system.) 
