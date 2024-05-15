@@ -1,14 +1,66 @@
-# UnixGreenhouse
-
-Winter 2024 | Unix 420-321-VA 
+# UnixGreenhouse (Winter 2024 | Unix | 420-321-VA)
 
 ## Project Overview  
 
-In an era of technological domination and rapid urbanization, it’s important for us to always remember to make space for nature in our lives. A great way to do this is by keeping a garden, as, with the widespread use of pesticides in agriculture, many have already turned to keeping their own gardens in order to safely grow their own produce. Unfortunately, a large number of people forget, or don’t have time, to tend to their plants regularly, which results in said plants withering away, wasting the would-be gardener’s time and effort. Thus, our team would like to create a solution to help people monitor their plant(s)'s condition(s), so that people can easily know when their plants need attention, and so that more people can keep a touch of nature in their lives.
+For our project, we have decided to create a plant monitoring system using a Raspberry Pi 4. Our project aims to help people keep track of their plant(s)'s condition(s) by collecting and storing information about various factors that could affect the plant(s), namely the temperature and humidity surrounding the plant(s). We used a Raspberry Pi 4 as well as a DHT11 sensor to obtain the temperature and humidity values. 
 
-For our project, we have decided to create a plant monitoring system using a Raspberry Pi 4. Our project aims to help people keep track of their plant(s)'s condition(s) by collecting and storing information about various factors that could affect the plant(s), namely the temperature and humidity surrounding the plant(s), as well as the soil moisture level. We used a Raspberry Pi 4 as well as a DHT11 sensor to obtain the temperature and humidity values, and a Capacitative Soil Moisture Sensor v. 1.2 for the soil moisture level. 
+## Modifications 
+
+Our final project ended being different from our original ideas. Certain features were changed or replaced due to either being less useful than what we originally thought they would be, or simply because we didn't manage to implement them.
+
+### Other Solutions
 
 One of our solutions that we had originally envisioned involved creating a plant watering system using a Raspberry Pi. The system would detect the moisture level of the plant’s soil. If dry, the system would proceed to water the plants for a specified period of time to ensure an adequate amount of water had been provided to the plant. If wet, the system would not water the plant. This is a simple solution; however we felt it did not fully ensure the plant(s)’s survival given its narrow scope of work. It also did not communicate much information regarding the plant(s)’s condition(s) to the owner. We planned to incorporate this system into our current solution, the more complete greenhouse system, however, doing so seemed to be too complex a task to complete within the time-frame we were given, as it involved woodworking. Thus, we decided to scrap the automated plant watering system, in favour of simply gathering data using sensors. 
+
+### Soil Moisture Level
+
+When deciding which factors to measure, we had originally decided to measure the soil moisture level of the plant, in addition to the temperature and humidity. Unfortunately, we were not able to get the Capacitative Soil Moisture Sensor v. 1.2 to work. 
+
+Since the sensor outputs analog data which cannot be read by a Raspberry Pi due to the latter's lack of an ADC (Analog to Digital Converter) circuit, we had to use another device to receive the data. 
+
+At first, we attempted to use a Grove Pi+ component. Using the component required using the [GrovePi library]((https://github.com/DexterInd/GrovePi). However, after cloning the library, we found we could not use it, as the reference to the user in the library was "pi@raspberrypi". Our raspberry pi was named "garden@raspberrypi", so we received errors when trying to run the code, as the home directory referenced in the library scripts did not match with our home directory. Even after asking for help from the teacher who created a "pi" user on the Raspberry Pi so that we could match the library scripts, we continued to receive errors. This is possibly due to the fact that since we had no pi user upon running the scripts, a "pi" reference had already been created with its own permissions. Upon creating a new "pi" user, that user could have inherited the permissions of the already created "pi", which prevented us from using it. 
+
+Since, we did not want to re-flash our SD card just so that we could rename our root user, we decided to try using an Arduino to connect and receive the data from the sensor. We installed the Arduino IDE on the Raspberry Pi, and wrote the following script for the Arduino:
+
+```
+const int soilPin = ACM0; 
+const int threshold = 500;
+
+void setup () {
+Serial.begin(9600); 
+}
+
+void 100p() {
+int soilValue = analogRead(soilPin); // Read soil moisture value
+Serial. println(soilValue); // Send value to Raspberry Pi delay (1000); 
+}
+```
+
+We also wrote the follwing code for the Python Script that would run on the Raspberry Pi:
+
+```
+import serial
+
+ser = serial. Serial('/dev/ttyAcM0', 9600) # Open serial port (adjust port as need
+ser. flush()
+
+while True:
+  if ser.in_waiting > 0:
+     data = ser. readline() decode(). strip()
+     print("Soil moisture:", data)
+```
+
+Unfortunately, this also did not work. We made sure to check the connection between the Arduino and the Raspberry Pi as well as the Capacitative Soil Moisture Sensor using the following command: 
+
+```
+ls /dev/tty*
+```
+
+We found that our Arduino was listed under /dev/ttyACM0. This path also appeared when we checked the available ports in the Arduino IDE.
+
+### Email
+
+In terms of storing the information
 
 (...)
 
@@ -17,6 +69,6 @@ Our final solution was influenced, in part, by a meeting we had with the Vanier 
 ## Materials Overview
 1. Raspberry Pi 4,
 2. DHT11 sensor (for temperature and humidity),
-3. Capacitative Soil Moisture Sensor v. 1.2 (for soil moisture level).
+3. (Optional) Capacitative Soil Moisture Sensor v. 1.2 (for soil moisture level).
 
 (see [INSTALL](INSTALL.md) file for information on how to create the system.) 
