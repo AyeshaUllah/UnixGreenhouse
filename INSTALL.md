@@ -20,7 +20,9 @@ sudo apt upgrade -y
 ```
 
 Install the required packages for this project (Python 3, its package manager pip, and the Python virtual environment module) with the following command:
-    sudo apt install python3 python3-pip python3-venv
+```
+sudo apt install python3 python3-pip python3-venv
+```
 
 ## Creating the Python Virtual Environment
 Since we will be writing a Python script and using a Python virtual environment to run the DHT11 sensor, its best to create a separate directory to store all the required files.
@@ -34,7 +36,7 @@ Create a Python virtual environment.
 python3 -m venv env
 ```
 
-Run the environment.
+Activate the environment.
 ```
 source env/bin/activate
 ```
@@ -77,4 +79,29 @@ To run the Python script, type the following command into the terminal:
 ```
 python3 dht11.py
 ```
-            
+
+## Automate the Python script using crontab
+In order to ensure the Python script runs automatically, use crontab. 
+
+Type the following command to create an automated task that will run periodically using the cron daemon:
+```
+crontab -e
+```
+
+At the bottom of the page, type the following command to append the output of the script to a CSV file. Each asterisk represents the minutes, days, months, or weeks respectively of when you want the script to run. For the purposes of this project, we set it to run every 2 minutes to check if it was working.
+```
+*/2 * * * * /path/to/your/script.sh >> /path/to/output/file.csv 2>&1
+```
+
+For our purposes, we also had to include the path to the Python3 interpretor within the Python environment, so that the script could be interpreted and run: 
+
+To get the path of your Python3 interpretor, type the command:
+```
+which python3
+```
+
+And put that path in the previously mentioned command, like so: 
+
+```
+*/2 * * * * /path/to/your/python/interpreter /path/to/your/script.sh >> /path/to/output/file.csv 2>&1
+```
