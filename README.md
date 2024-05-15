@@ -18,7 +18,7 @@ When deciding which factors to measure, we had originally decided to measure the
 
 Since the sensor outputs analog data which cannot be read by a Raspberry Pi due to the latter's lack of an ADC (Analog to Digital Converter) circuit, we had to use another device to receive the data. 
 
-At first, we attempted to use a Grove Pi+ component. Using the component required using the [GrovePi library]((https://github.com/DexterInd/GrovePi). However, after cloning the library, we found we could not use it, as the reference to the user in the library was "pi@raspberrypi". Our raspberry pi was named "garden@raspberrypi", so we received errors when trying to run the code, as the home directory referenced in the library scripts did not match with our home directory. Even after asking for help from the teacher who created a "pi" user on the Raspberry Pi so that we could match the library scripts, we continued to receive errors. This is possibly due to the fact that since we had no pi user upon running the scripts, a "pi" reference had already been created with its own permissions. Upon creating a new "pi" user, that user could have inherited the permissions of the already created "pi", which prevented us from using it. 
+At first, we attempted to use a Grove Pi+ component. Using the component required using the [GrovePi library](https://github.com/DexterInd/GrovePi). However, after cloning the library, we found we could not use it, as the reference to the user in the library was "pi@raspberrypi". Our raspberry pi was named "garden@raspberrypi", so we received errors when trying to run the code, as the home directory referenced in the library scripts did not match with our home directory. Even after asking for help from the teacher who created a "pi" user on the Raspberry Pi so that we could match the library scripts, we continued to receive errors. This is possibly due to the fact that since we had no pi user upon running the scripts, a "pi" reference had already been created with its own permissions. Upon creating a new "pi" user, that user could have inherited the permissions of the already created "pi", which prevented us from using it. 
 
 Since, we did not want to re-flash our SD card just so that we could rename our root user, we decided to try using an Arduino to connect and receive the data from the sensor. We installed the Arduino IDE on the Raspberry Pi, and wrote the following script for the Arduino:
 
@@ -56,7 +56,9 @@ Unfortunately, this also did not work. We made sure to check the connection betw
 ls /dev/tty*
 ```
 
-We found that our Arduino was listed under /dev/ttyACM0. This path also appeared when we checked the available ports in the Arduino IDE.
+We found that our Arduino was listed under /dev/ttyACM0. This path also appeared when we checked the available ports in the Arduino IDE. However, when we ran the python script, it would not output anything. 
+
+Perhaps we wrote the scripts or did the wiring incorrectly, or there might have simply been a problem with the sensor itself, regardless, we decided to scrap the soil moisture measurement.
 
 ### Email
 
