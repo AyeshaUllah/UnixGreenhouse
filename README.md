@@ -6,7 +6,7 @@ For our project, we have decided to create a plant monitoring system using a Ras
 
 ## Modifications 
 
-Our final project ended being different from our original ideas. Certain features were changed or replaced due to either being less useful than what we originally thought they would be, or simply because we didn't manage to implement them.
+Our final project ended being different from our original idea. Certain features were changed or replaced due to either being less useful than what we originally thought they would be, or simply because we didn't manage to implement them. 
 
 ### Other Solutions
 
@@ -65,6 +65,10 @@ Perhaps we wrote the scripts or did the wiring incorrectly, or there might have 
 In terms of storing the information, we wanted to send it to the owner, in the form of an email notification. We would send the owner an email periodically, at regular intervals, to remind them to water their plant. However, after talking to the Vanier gardening coordinator who told us it would be more useful to have the data stored in a spreadsheet, we decided to scrap the email, and store all the data in a CSV file instead.
 
 Our final solution was influenced, in part, by a meeting we had with the Vanier gardening coordinator. In order to ensure we were creating a useful product, we arranged a meeting with him to ask questions that were relevant to our project. To see a transcript of our interview, please view the [INTERVIEW](INTERVIEW.md) file.
+
+### Automated Script
+
+We also decided to make it so that the Raspberry Pi could receive and store the temperature and humidity data automatically. Our final project uses crontab to run our Python script every 2 minutes, and redirect its output to the CSV file. This eliminates the need for the owner to run the system manually.
 
 ## Materials Overview
 1. Raspberry Pi 4,
