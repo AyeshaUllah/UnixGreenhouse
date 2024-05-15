@@ -9,9 +9,11 @@
 To connect the DTH11 sensor to the Raspberry Pi, follow this diagram:
 
 ![image](https://github.com/AyeshaUllah/UnixGreenhouse/assets/123969109/514b1aa4-6d48-4fc2-811e-362775913bf6)
+
 Source: Pi My Life Up | https://pimylifeup.com/raspberry-pi-dht11-sensor/
 
 Here is our Raspberry Pi connected to the DHT11 sensor:
+
 ![rpi](https://github.com/AyeshaUllah/UnixGreenhouse/assets/123969109/0c7721c5-6e23-4a0c-84ec-4bf786d446ee)
 
 ## Preparing the Raspberry Pi
