@@ -60,17 +60,15 @@ We found that our Arduino was listed under /dev/ttyACM0. This path also appeared
 
 Perhaps we wrote the scripts or did the wiring incorrectly, or there might have simply been a problem with the sensor itself, regardless, we decided to scrap the soil moisture measurement.
 
-### Email
+### Email Notification
 
-In terms of storing the information
-
-(...)
+In terms of storing the information, we wanted to send it to the owner, in the form of an email notification. We would send the owner an email periodically, at regular intervals, to remind them to water their plant. However, after talking to the Vanier gardening coordinator who told us it would be more useful to have the data stored in a spreadsheet, we decided to scrap the email, and store all the data in a CSV file instead.
 
 Our final solution was influenced, in part, by a meeting we had with the Vanier gardening coordinator. In order to ensure we were creating a useful product, we arranged a meeting with him to ask questions that were relevant to our project. To see a transcript of our interview, please view the [INTERVIEW](INTERVIEW.md) file.
 
 ## Materials Overview
 1. Raspberry Pi 4,
 2. DHT11 sensor (for temperature and humidity),
-3. (Optional) Capacitative Soil Moisture Sensor v. 1.2 (for soil moisture level).
+3. Jumper wires.
 
 (see [INSTALL](INSTALL.md) file for information on how to create the system.) 
