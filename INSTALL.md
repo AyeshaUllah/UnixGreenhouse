@@ -4,6 +4,7 @@
 - Raspberry Pi 4,
 - DHT11 sensor (for temperature and humidity),
 - Capacitative Soil Moisture Sensor v. 1.2 (for soil moisture level).
+- Jumper cables 3x
 
 ## Wiring
 To connect the DTH11 sensor to the Raspberry Pi, follow this diagram:
