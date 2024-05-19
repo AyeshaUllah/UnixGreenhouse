@@ -65,16 +65,17 @@ import board
 
 dht_device = adafruit_dht.DHT11(board.D4)
 
-while True:
-    try:
-        temperature_c = dht_device.temperature
-        temperature_f = temperature_c * (9 / 5) + 32
+try:
+    #set the variables
+    temperature_c = dht_device.temperature
+    humidity = dht_device.humidity
+    timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
 
-        humidity = dht_device.humidity
+    #print the output in console 
+    print('Time: {} Temp:{:.1f} C Humidity:{}%'.format(timestamp, temperature_c, humidity))
 
-        print("Temp:{:.1f} C / {:.1f} F    Humidity: {}%".format(temperature_c, temperature_f, humidity))
-    except RuntimeError as err:
-        print(err.args[0])
+except RuntimeError as err:
+    print(err.args[0])
 
     time.sleep(2.0)
 ```
@@ -95,7 +96,7 @@ crontab -e
 
 At the bottom of the page, type the following command to append the output of the script to a CSV file. Each asterisk represents the minutes, days, months, or weeks respectively of when you want the script to run. For the purposes of this project, we set it to run every 2 minutes to check if it was working.
 ```
-*/2 * * * * /path/to/your/script.sh >> /path/to/output/file.csv 2>&1
+*/2 * * * * /path/to/your/script.py >> /path/to/output/file.csv 2>&1
 ```
 
 For our purposes, we also had to include the path to the Python3 interpretor within the Python environment, so that the script could be interpreted and run: 
