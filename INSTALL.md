@@ -66,12 +66,10 @@ import board
 dht_device = adafruit_dht.DHT11(board.D4)
 
 try:
-    #set the variables
     temperature_c = dht_device.temperature
     humidity = dht_device.humidity
     timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
 
-    #print the output in console 
     print('Time: {} Temp:{:.1f} C Humidity:{}%'.format(timestamp, temperature_c, humidity))
 
 except RuntimeError as err:
