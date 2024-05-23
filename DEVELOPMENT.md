@@ -68,7 +68,7 @@ Our final solution was influenced, in part, by a meeting we had with the Vanier 
 
 ### Automated Script
 
-We also decided to make it so that the Raspberry Pi could receive and store the temperature and humidity data automatically. Our final project uses crontab to run our Python script every 2 minutes, and redirect its output to the CSV file. This eliminates the need for the owner to run the system manually.
+We also decided to make it so that the Raspberry Pi could receive and store the temperature and humidity data automatically. Our final project uses crontab to run our Python script every 2 minutes, and redirect its output to a file. This eliminates the need for the owner to run the system manually.
 
 ## Materials Overview
 1. Raspberry Pi 4,
