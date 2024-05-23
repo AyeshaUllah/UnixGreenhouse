@@ -18,6 +18,8 @@ Here is our Raspberry Pi connected to the DHT11 sensor:
 ![rpi](https://github.com/AyeshaUllah/UnixGreenhouse/assets/123969109/0c7721c5-6e23-4a0c-84ec-4bf786d446ee)
 
 ## Preparing the Raspberry Pi
+Using Raspberry Pi OS, flash the MicroSD of the Raspberry Pi 4 with Debian Bookworm (64-bit).  
+
 Open the terminal. Update and upgrade the Raspberry Pi's packages by typing the following commands.
 ```
 sudo apt update
