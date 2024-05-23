@@ -92,7 +92,7 @@ Type the following command to create an automated task that will run periodicall
 crontab -e
 ```
 
-At the bottom of the page, type the following command to append the output of the script to a CSV file. Each asterisk represents the minutes, days, months, or weeks respectively of when you want the script to run. For the purposes of this project, we set it to run every 2 minutes to check if it was working.
+At the bottom of the page, type the following command to append the output of the script to a file. Each asterisk represents the minutes, days, months, or weeks respectively of when you want the script to run. For the purposes of this project, we set it to run every 2 minutes to check if it was working.
 ```
 */2 * * * * /path/to/your/script.py >> /path/to/output/file.csv 2>&1
 ```
@@ -104,8 +104,8 @@ To get the path of your Python3 interpretor, type the command:
 which python3
 ```
 
-And put that path in the previously mentioned command, like so: 
+And include that path in the previous command, like so: 
 
 ```
-*/2 * * * * /path/to/your/python/interpreter /path/to/your/script.sh >> /path/to/output/file.csv 2>&1
+*/2 * * * * /path/to/your/python/interpreter /path/to/your/script.py >> /path/to/output/file.csv 2>&1
 ```
