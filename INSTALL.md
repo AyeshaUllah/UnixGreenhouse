@@ -94,7 +94,7 @@ crontab -e
 
 At the bottom of the page, type the following command to append the output of the script to a file. Each asterisk represents the minutes, days, months, or weeks respectively of when you want the script to run. For the purposes of this project, we set it to run every 2 minutes to check if it was working.
 ```
-*/2 * * * * /path/to/your/script.py >> /path/to/output/file.csv 2>&1
+*/2 * * * * ~/dht11.py >> /path/to/output/file.csv 2>&1
 ```
 
 For our purposes, we also had to include the path to the Python3 interpretor within the Python environment, so that the script could be interpreted and run: 
@@ -107,5 +107,5 @@ which python3
 And include that path in the previous command, like so: 
 
 ```
-*/2 * * * * /path/to/your/python/interpreter /path/to/your/script.py >> /path/to/output/file.csv 2>&1
+*/2 * * * * /path/to/your/python/interpreter ~/dht11.py.py >> /path/to/output/file.csv 2>&1
 ```
