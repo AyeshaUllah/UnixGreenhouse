@@ -1,6 +1,6 @@
 # Journals
 
-These are a collection of the journals we wrote documenting the creation process of our project.
+Below you will find a collection of the journals we wrote to document the creation process of our project.
 
 ## Journal 1
 ### 23/04/2024
