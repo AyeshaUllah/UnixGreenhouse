@@ -1,15 +1,17 @@
 # Journals
 
+These are a collection of the journals we wrote documenting the creation process of our project.
+
 ## Journal 1
 ### 23/04/2024
-After receiving the feed, I checked the internet for the process and things to set up when implementing our original project and the recommendations given to us. 
+After receiving the feed, we checked the internet for the process and things to set up when implementing our original project and the recommendations given to us. 
 
 ### 24/04/2024 
 After we received the feedback regarding our project, we had a discussion and decided to follow the advice given to us. Instead of developing an automated watering system suitable
 for use in a greenhouse or personal garden, we opted to install a system that sends a notification to the plant owner when their plants require watering.
 
 ### 30/04/2024
-One of my team members created a Git repository and personal branches. Link: https://github.com/AyeshaUllah/UnixGreenhouse.git
+Ayesha created a Git repository and personal branches. Link: https://github.com/AyeshaUllah/UnixGreenhouse.git
 
 ### 01/05/2024
 We went to the STEM Center and were able to see the Raspberry Pi and understand more about what we need to start installing and booting the
@@ -18,7 +20,7 @@ to the marker technician, he suggested a lot of things and even offered a hand t
 
 ## Journal 2
 ### 02/05/2024
-Raebaa and I visited the STEM Center after class to borrow a Raspberry Pi and work on it. 
+Raeeba and Janna visited the STEM Center after class to borrow a Raspberry Pi and work on it. 
 We installed Raspberry Pi OS and flashed the SD card with the 32-bit OS. In the setup 
 settings, we enabled SSH connection and connected to the school Wi-Fi network.
 However, we could not do more since Raeeba is not feeling well
@@ -33,60 +35,7 @@ explored the OS, running some update commands in the terminal
 
 ### 06/05/2024
 Raeeba had a meeting with the gardening coordinator and she shared the conversation 
-they had
-
-1. General plant questions
-a. What kind of plants do the Vanier Gardens have?
-    The gardens are separated into three diMerent gardens with diMerent kinds of 
-    plants in them:
-    • The first (“the food forest”) contains perennial plants (i.e., trees, nuts, apples, 
-    blackberries, etc.);
-    • The second contains vegetables boxes (i.e., squash, corn, lettuce, etc.);
-    • The third (“the no-mow zone”) contains pollinating flowers, and grain.
-b. How often does each plant need to be watered?
-   It depends on the weather conditions, as well as the plant.
-c. What are the main diMerences between caring for houseplants and caring 
-  for outdoors plants, like the ones in the Vanier Gardens.
-
-With indoor plants, the watering is 100% up to the owner. The diMerence between 
-pots (i.e., size, materials, etc.) must also be considered. If creating a monitoring 
-system for indoor plants, it would be better to give each pot its own sensors to 
-measure its conditions, while for outdoor plants, we could place a few sensors 
-to measure the conditions of a whole plot of land. Bugs are also harder to deal 
-with indoors.
-
-d. Do diMerent plants have diMerent “safe” temperature and humidity 
-  ranges?
-  Yes, they do vary per type of plant. He is not aware of the exact figures
-  
-3. UI questions
-  a. Would it be more useful for you to have the numerical values, or would a 
-    text indictor (i.e., good temperature, bad humidity) be better?
-    Since he is not aware of the exact figures of what would constitute a “good” or 
-    “bad” measurement, and since plants’ temperature and humidity ranges vary, 
-    the latter option would not be possible to do. We would have to find the safe 
-    ranges for each specific plant, which would make the project more complex. He 
-    is fine with receiving numerical data instead.
-b. Since plants’ watering times vary, would it be useful for you to receive an 
-  email notification reminding you to water your plants?
-  If the email contains information about the plant’s condition, it could be useful. 
-  He would find it more useful to have all the information recorded in a 
-  spreadsheet, though. Since the Gardens double as an educational place, having 
-  these records could be useful for classes who could study, for example, the 
-  effect of global warming on plant life. (Note: while a general email reminder to 
-  water your plants may not be useful for outdoor plants, they could be useful for 
-  indoor ones)
-4. Features that would be useful to have/possible future enhancements.
-  a. Apart from the sensors we were already planning on adding (temperature, 
-    humidity and soil moisture), what other features would be useful to have?
-    Ways to measure windspeed, the amount of rainfall and sunshine a plot of land 
-    receives would be useful. For the temperature and humidity sensor, obtaining 
-    the soil temperature and humidity would be more useful to have than the air 
-    temperature and humidity.
-    We discussed more about our plans for our project, and he gave us some advice 
-    on where we could put the Raspberry Pi. He also said that for the purposes of the 
-    Vanier Gardens, having a Wi-Fi connection over the school’s Wi-Fi would be 
-    better than a data plan.
+they had. The transcript of their conversation can be found in the [INTERVIEW](INTERVIEW.md) file.
     
 ### 08/05/2024
 We visited the STEM Center to borrow a Raspberry Pi and work on a project. The 
@@ -103,7 +52,7 @@ being managed or accessed. We attempted to follow other tutorials that used the 
 repository as the previous guide, but we still encountered the same errors. For the wiring, 
 we found a diagram that helps us to connect the Raspberry Pi and the sensor but, we 
 couldn’t do more since we are having trouble with the code. As a last resort, we consulted 
-chatgpt since all the tutorials we followed were not working. however, we are still 
+chatgpt since all the tutorials we followed were not working. However, we are still 
 experiencing the same error. We decided to bring it to the class the next day instead since 
 we had been working on it for a couple of hour already and we were still stuck with those 
 errors
