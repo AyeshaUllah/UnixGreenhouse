@@ -20,6 +20,8 @@ Here is our Raspberry Pi connected to the DHT11 sensor:
 ## Preparing the Raspberry Pi
 Using Raspberry Pi OS, flash the MicroSD of the Raspberry Pi 4 with Debian Bookworm (64-bit).  
 
+Connect the Raspberry Pi to a monitor, keyboard, and mouse. Boot up the computer.
+
 Open the terminal. Update and upgrade the Raspberry Pi's packages by typing the following commands.
 ```
 sudo apt update
