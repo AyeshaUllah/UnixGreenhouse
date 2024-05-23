@@ -109,3 +109,7 @@ And include that path in the previous command, like so:
 ```
 */2 * * * * /path/to/your/python/interpreter ~/dht11.py.py >> /path/to/output/file.csv 2>&1
 ```
+## Expected Output
+If you followed the steps properly, your output should look something like this:
+
+![436335409_826176778844902_7246741191479867343_n](https://github.com/AyeshaUllah/UnixGreenhouse/assets/130682851/ced8a7cf-0c77-4539-8bd6-86b13d72ed21)
